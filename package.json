@@ -1,15 +1,30 @@
 {
-  "name": "koa2",
+  "name": "zhihu_api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "仿知乎api",
+  "main": "app/index.js",
   "scripts": {
-    "dev": "node src/index.js"
+    "dev": "nodemon app/index.js",
+    "lint:create": "eslint --init"
   },
-  "author": "hhj",
-  "license": "ISC",
+  "keywords": [
+    "api"
+  ],
+  "author": "华泓钧",
+  "license": "MIT",
   "dependencies": {
-    "koa": "^2.11.0",
-    "koa-router": "^8.0.8"
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-json-error": "^3.1.2",
+    "koa-jwt": "^4.0.0",
+    "koa-parameter": "^3.0.1",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0",
+    "mongoose": "^5.11.8"
+  },
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "nodemon": "^2.0.6"
   }
 }
